@@ -1,0 +1,178 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  width: 400px;
+  margin: 50px auto;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+h3 {
+  margin: 0;
+  text-align: center;
+  color: #007bff;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  font-size: 24px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 15px;
+}
+
+label {
+  font-weight: bold;
+}
+
+input[type='text'],
+input[type='date'],
+input[type='time'],
+textarea {
+  padding: 10px;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+input[type='text']:focus,
+input[type='date']:focus,
+input[type='time']:focus,
+textarea:focus {
+  outline: none;
+  border-color: #007bff;
+  box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+textarea {
+  resize: none;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+button[type='submit'] {
+  background-color: #007bff;
+  color: #fff;
+}
+
+button[type='submit']:hover {
+  background-color: #0056b3;
+}
+
+button.edit {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.edit:hover {
+  background-color: #218838;
+}
+
+button.delete {
+  background-color: #dc3545;
+  color: #fff;
+}
+
+button.delete:hover {
+  background-color: #c82333;
+}
+
+button.toggle {
+  padding: 5px 15px;
+  font-size: 14px;
+}
+
+button.toggle.pending {
+  background-color: #ffc107;
+  color: #212529;
+}
+
+button.toggle.pending:hover {
+  background-color: #e0a800;
+}
+
+button.toggle.complete {
+  background-color: #28a745;
+  color: #fff;
+}
+
+button.toggle.complete:hover {
+  background-color: #218838;
+}
+
+.tasks {
+  margin-top: 20px;
+}
+
+.task {
+  background-color: #fff;
+  border: 1px solid #ced4da;
+  border-radius: 5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  position: relative;
+  transition: all 0.3s ease;
+}
+
+.task:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.task.completed {
+  background-color: #d4edda;
+  border-color: #c3e6cb;
+}
+
+.task h4 {
+  margin-bottom: 5px;
+  color: #007bff;
+}
+
+.task p {
+  margin: 5px 0;
+}
+
+.task p.date {
+  font-weight: bold;
+}
+
+.task p.time {
+  font-style: italic;
+}
+
+.buttons {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.buttons button {
+  margin-left: 5px;
+  cursor: pointer;
+}
